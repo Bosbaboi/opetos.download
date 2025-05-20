@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OPET OS DOWNLOAD</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0a0a0a;
+      color: #e0e0e0;
+    }
+
+    header {
+      background-color: #111;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px #00aaff22;
+    }
+
+    header h1 {
+      color: #00aaff;
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #141414;
+      padding: 10px 0;
+      border-top: 1px solid #00aaff33;
+      border-bottom: 1px solid #00aaff33;
+    }
+
+    nav a {
+      color: #00aaff;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #00aaff22;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #121212;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00aaff33;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 2s ease, transform 2s ease;
+    }
+
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .section h2 {
+      color: #00aaff;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #00aaff;
+      color: #000;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 10px 10px 0 0;
+    }
+
+    .button:hover {
+      background-color: #0088cc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      color: #666;
+      background-color: #0a0a0a;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>OPET OS DOWNLOAD</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#downloads">Downloads</a>
+    <a href="#howto">Install Guide</a>
+    <a href="#links">Links</a>
+    <a href="#support">Support</a>
+  </nav>
+
+  <div class="section" id="about">
+    <h2>About MERENGOS</h2>
+    <p>
+      OPETOS is a modified, lightweight, and optimized version of Windows.<br />
+      It is over three times lighter than the original Microsoft Windows.<br />
+      It comes completely free of bloatware, without Microsoft Windows Defender, and without Microsoft Windows updates.<br />
+      MERENG OS uses three times less CPU and RAM compared to standard Windows.
+    </p>
+  </div>
+
+  <div class="section" id="downloads">
+    <h2>Download MERENGOS</h2>
+    <p>Choose your edition:</p>
+    <a class="button" href="#">Comming Soon</a>
+    <a class="button" href="#">Comming Soon</a>
+    <a class="button" href="#">Comming Soon</a>
+  </div>
+
+  <div class="section" id="howto">
+    <h2>How to Install</h2>
+    <p>
+      Prepare USB and open Ventoy or Rufus.<br />
+      Match partition (MBR or GPT).<br />
+      BIOS Key Examples:<br />
+      Toshiba: F2<br />
+      Lenovo: F2 / ESC<br />
+      Asus: F2 or more<br />
+      Axioo: F2 or more
+    </p>
+  </div>
+
+  <div class="section" id="links">
+    <h2>Official Links</h2>
+    <p><a class="button" href="http://dsc.gg/merengos">Join Discord</a></p>
+    <p><a class="button" href="https://youtube.com/@projectmerengos">YouTube MerengOS</a></p>
+    <p><a class="button" href="https://www.youtube.com/@bukharibukhari5670">YT Developer</a></p>
+  </div>
+
+  <div class="section" id="support">
+    <h2>Online Support</h2>
+    <p>Support for device: <strong>MERENG OS</strong></p>
+    <a class="button" href="http://dsc.gg/merengos">OPET OS Official DISCORD</a>
+    <a class="button" href="http://dsc.gg/opetos">MERENGOS X OPET OS</a>
+  </div>
+
+  <footer>
+    Developed by BUKHARI | MERENG OS © 2025
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll(".section");
+      sections.forEach((section, index) => {
+        setTimeout(() => {
+          section.classList.add("visible");
+        }, 500 + index * 300);
+      });
+    });
+  </script>
+</body>
+</html>
